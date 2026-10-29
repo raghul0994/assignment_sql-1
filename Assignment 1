@@ -1,0 +1,17 @@
+CREATE DATABASE RetailDB;
+USE RetailDB;
+
+CREATE TABLE Store_Items (
+    Item_ID INT PRIMARY KEY,
+    Shop_Title VARCHAR(100) NOT NULL,
+    Item_Title VARCHAR(100) NOT NULL,
+    Amount DECIMAL(10,2) DEFAULT 10.00
+);
+
+INSERT INTO Store_Items VALUES
+(301, 'Sunrise Stores', 'Notebook', 60.00),
+(302, 'Metro Mart', 'Pen', 15.00),
+(303, 'Happy Stores', 'Bag', 450.00),
+(304, 'Corner Shop', 'Bottle', 120.00);
+
+SELECT * FROM Store_Items;
